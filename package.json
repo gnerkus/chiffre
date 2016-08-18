@@ -1,0 +1,27 @@
+{
+  "name": "chiffre",
+  "version": "0.1.0",
+  "description": "Explore numbers. Built with AngularJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnerkus/chiffre.git"
+  },
+  "keywords": [
+    "numbers",
+    "angular"
+  ],
+  "author": "Ifeanyi Oraelosi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gnerkus/chiffre/issues"
+  },
+  "homepage": "https://github.com/gnerkus/chiffre#readme",
+  "devDependencies": {
+    "bower": "1.7.9",
+    "http-server": "0.9.0"
+  }
+}
