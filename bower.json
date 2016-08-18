@@ -23,6 +23,7 @@
     "materialize": "^0.97.7",
     "animate.css": "^3.5.2",
     "angular-animate": "^1.5.8",
-    "requirejs": "^2.2.0"
+    "requirejs": "^2.2.0",
+    "domReady": "requirejs-domready#^2.0.1"
   }
 }
