@@ -7,7 +7,7 @@ define([
   // Main module of the application
   return angular
           .module('chiffre', [
-            uiRouter, ngAnimate
+            'ui.router', 'ngAnimate'
           ])
           .config(config);
 });
