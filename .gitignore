@@ -1,5 +1,4 @@
 # Logs
-logs
 *.log
 npm-debug.log*
 
@@ -39,5 +38,5 @@ jspm_packages
 # Tasks
 todo.md
 
-# Bower components
-bower_components
+# Library files
+src/libs

@@ -3,13 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Chiffre</title>
-    <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css">
-    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="libs/materialize/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="libs/animate.css/animate.min.css">
     <style>[ng-cloak] { display: none; }</style>
   </head>
   <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/#/calc">Calculator</a></li>
+          <li><a href="/#/profile">Profile</a></li>
+          <li><a href="/#/settings">Settings</a></li>
+        </ul>
+      </div>
+    </nav>
     <div ui-view>
     </div>
-    <script data-main="app/main" src="bower_components/requirejs/require.js">
+    <script data-main="app/main" src="libs/requirejs/require.js"></script>
   </body>
 </html>
