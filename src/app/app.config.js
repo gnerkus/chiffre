@@ -1,28 +1,33 @@
 define([], function() {
-  function config($stateProvider, $urlRouteProvider) {
+  function config($stateProvider, $urlRouterProvider) {
     'use strict';
 
-    $urlRouteProvider.otherwise('main');
+    $urlRouterProvider.otherwise('/calc');
 
     $stateProvider
-      .state('calc', {
-        url: 'calc/{module:string}/{additional:string}',
+      .state('app', {
+        url: '/{module:string}?{additional:string}',
         // Load controller based on params
         controllerProvider: function($stateParams) {
           return loadComponent($stateParams, 'controller');
         },
         // Load page template based on params
-        templateProvider: function($stateParams) {
+        templateUrl: function($stateParams) {
           return loadComponent($stateParams, 'template');
         },
         resolve: {
           additional: function($stateParams) {
-            return [
-              {
-                entityId: 1,
-                entityType: 'digit'
-              }
-            ];
+            var addData = [];
+            if ($stateParams.additional) {
+              addData = [
+                {
+                  entityId: 1,
+                  entityType: 'digit'
+                }
+              ];
+            }
+
+            return addData;
           }
         }
       });
@@ -55,9 +60,9 @@ function loadTemplate(module) {
 
   if (module) {
     var tempName = module.toLowerCase();
-    template = 'app/' + tempName + '/' + tempName + 'template.html';
+    template = 'app/' + tempName + '/' + tempName + '.template.html';
   } else {
-    template = 'main.template.html';
+    template = 'app/main/main.template.html';
   }
 
   return template;
