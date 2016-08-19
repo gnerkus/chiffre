@@ -1,9 +1,18 @@
 define([
-  'angular'
+  'angular',
 ], function (angular) {
   'use strict';
 
-  return ['$scope', function ($scope) {
-    console.log('Loading controller');
+  return ['$scope', 'ProfileService', function ($scope, ProfileService) {
+    $scope.getName = function() {
+      $scope.username = ProfileService.getName();
+    };
+
+    $scope.setName = function(username) {
+      ProfileService.setName(username);
+    };
+
+    // Fetch the default username
+    $scope.getName();
   }];
 });
