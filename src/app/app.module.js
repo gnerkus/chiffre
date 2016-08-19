@@ -1,7 +1,8 @@
 define([
   'angular',
-  'app/app.config'
-], function(angular, config) {
+  'app.config',
+  './calc/calc.controller'
+], function(angular, config, calcCtrl) {
   'use strict';
 
   // Main module of the application
@@ -9,5 +10,6 @@ define([
           .module('chiffre', [
             'ui.router', 'ngAnimate'
           ])
-          .config(config);
+          .config(config)
+          .controller('CalcController', calcCtrl);
 });
