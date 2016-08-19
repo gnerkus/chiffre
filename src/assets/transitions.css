@@ -1,0 +1,7 @@
+.switched.ng-enter {
+  animation: slideInLeft 1s;
+}
+
+.switched.ng-leave {
+  animation: slideOutRight 1s;
+}
