@@ -1,12 +1,15 @@
 define([
   'angular',
   'app.config',
-  // Load controllers
+  // Load calculator module
   './calc/calc.controller',
+  // Load profile module
   './profile/profile.controller',
-  // Load services
-  './profile/profile.service'
-], function(angular, config, calcCtrl, profileCtrl, profileService) {
+  './profile/profile.service',
+  // Load settings module
+  './settings/settings.service',
+  './settings/settings.controller',
+], function(angular, config, calcCtrl, profCtrl, profSvc, setSvc, setCtrl) {
   'use strict';
 
   // Main module of the application
@@ -16,6 +19,8 @@ define([
           ])
           .config(config)
           .controller('CalcController', calcCtrl)
-          .controller('ProfileController', profileCtrl)
-          .factory('ProfileService', profileService);
+          .controller('ProfileController', profCtrl)
+          .controller('SettingsController', setCtrl)
+          .factory('ProfileService', profSvc)
+          .factory('SettingsService', setSvc);
 });
