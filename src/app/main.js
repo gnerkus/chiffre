@@ -12,6 +12,7 @@ require.config({
     angularAnimate: '../libs/angular-animate/angular-animate',
     jQuery: '../libs/jquery/dist/jquery',
     domReady: '../libs/domReady/domReady',
+    lodash: '../libs/lodash/dist/lodash',
   },
   // Angular does not support AMD out of the box so requires a shim
   shim: {
