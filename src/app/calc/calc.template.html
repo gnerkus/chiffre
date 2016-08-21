@@ -1,6 +1,40 @@
 <div>
-  <h1>Calculator</h1>
-  <h2>Hello, {{username}}</h2>
-  <input phone-input ng-model="phoneNumber" />
-  <div>Phone number: {{phoneNumber}}</div>
+  <h3>Calculator</h3>
+  <p>Hello, {{username}}</p>
+  <div class="row">
+    <div class="col s8 offset-s2">
+      <div class="row">
+        <div class="col s12 input-field">
+          <p><strong>Phone number formatter</strong></p>
+          <input phone-input ng-model="phoneNumber" />
+          <div>Phone number: {{phoneNumber}}</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s2 input-field">
+          <p>First</p>
+          <input type="number" ng-model="firstNum" ng-change="computeSum()"/>
+        </div>
+        <div class="col s2 input-field">
+          <p>Second</p>
+          <input type="number" ng-model="secondNum" ng-change="computeSum()"/>
+        </div>
+        <div class="col s2 input-field">
+          <p>Third</p>
+          <input type="number" ng-model="thirdNum" ng-change="computeSum()"/>
+        </div>
+        <div class="col s2 input-field">
+          <p>Sum</p>
+          <input type="number" ng-model="numberSum" />
+        </div>
+        <div class="col s2 input-field">
+          <p></p>
+          <button type="button" class="btn waves-effect waves-light" ng-click="computeQuotient()">
+            Spread Sum
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
