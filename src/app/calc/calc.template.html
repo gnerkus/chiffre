@@ -6,11 +6,22 @@
       <div class="row">
         <div class="col s12 input-field">
           <p><strong>Phone number formatter</strong></p>
+          <p><i>This demonstrates the phone number converter for problem spec <strong>5</strong></i></p>
           <input phone-input ng-model="phoneNumber" />
           <div>Phone number: {{phoneNumber}}</div>
         </div>
       </div>
       <div class="row">
+        <div class="col s12 input-field">
+          <p><strong>Currency formatter</strong></p>
+          <p><i>This demonstrates the phone number converter for problem spec <strong>6</strong></i></p>
+          <input currency-input ng-model="currency" />
+          <div>Currency: {{currency}}</div>
+        </div>
+      </div>
+      <div class="row">
+        <p>Simple Calculator</p>
+        <p><i>This demonstrates the simple calculator for problem spec <strong>7</strong></i></p>
         <div class="col s2 input-field">
           <p>First</p>
           <input type="number" ng-model="firstNum" ng-change="computeSum()"/>

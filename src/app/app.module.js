@@ -4,6 +4,7 @@ define([
   // Load calculator module
   './calc/calc.controller',
   './calc/phone-input.directive',
+  './calc/currency-input.directive',
   // Load profile module
   './profile/profile.controller',
   './profile/profile.service',
@@ -11,7 +12,7 @@ define([
   // Load settings module
   './settings/settings.service',
   './settings/settings.controller',
-], function(angular, config, calcCtrl, phoneDir, profCtrl, profSvc, autoDir, setSvc, setCtrl) {
+], function(angular, config, calcCtrl, phoneDir, curDir, profCtrl, profSvc, autoDir, setSvc, setCtrl) {
   'use strict';
 
   // Main module of the application
@@ -26,5 +27,6 @@ define([
           .controller('ProfileController', profCtrl)
           .controller('SettingsController', setCtrl)
           .directive('phoneInput', phoneDir)
+          .directive('currencyInput', curDir)
           .directive('autoTabTo', autoDir);
 });
