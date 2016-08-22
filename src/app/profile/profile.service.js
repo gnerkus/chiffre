@@ -1,6 +1,8 @@
 define([
   'angular'
 ], function (angular) {
+  /* Profile Service */
+  // This defines a solution for problem spec 2
   'use strict';
 
   return function () {

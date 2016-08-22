@@ -4,6 +4,8 @@ define([], function() {
 
     $urlRouterProvider.otherwise('/calc');
 
+    /* Dynamic app router */
+    // This defines the solution for problem spec 1
     $stateProvider
       .state('app', {
         url: '/{module:string}?{additional:string}',
