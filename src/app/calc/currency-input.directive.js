@@ -15,15 +15,16 @@ define([
       ngModelCtrl.$parsers.push(function inputFormatter(viewValue) {
         // Sanitize value
         var sanitValue = (viewValue + '').replace(/\D/g, '');
-
         var figureLen = sanitValue.length;
+        var currencyPos = figureLen + 2;
+
         var chars = {
           0: '0',
           1: '0',
           2: '.',
           5: ',',
           8: ',',
-          figureLen + 2: '$'
+          currencyPos: '$'
         }
         var formattedValue = '';
 
