@@ -29,7 +29,7 @@ You can view the app on `http://localhost:8080`
 # Problem spec solutions
 | Problem Spec   | Solution file                   |
 | :------------- | :--------------------- |
-| 1              | `(app.config.js)[https://github.com/gnerkus/chiffre/src/app/app.config.js]`              |
+| 1              | (app.config.js)[https://github.com/gnerkus/chiffre/src/app/app.config.js]              |
 | 2              | `(profile.service.js)[https://github.com/gnerkus/chiffre/src/app/profile/profile.service.js]`              |
 | 3              | `(transitions.csss)[https://github.com/gnerkus/chiffre/src/assets/transitions.css]`              |
 | 4              | `(settings.controller.js)[https://github.com/gnerkus/chiffre/src/app/settings/settings.controller.js]`              |
